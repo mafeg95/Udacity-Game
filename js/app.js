@@ -25,15 +25,15 @@ Enemy.prototype.render = function() {
 };
 
 // // Enemies our player must avoid
-// var Player = function(speed) {
-//     // Variables applied to each of our instances go here,
-//     // we've provided one for you to get started
-//     this.x = 3;
-//     this.y = 0;
-//     // The image/sprite for our enemies, this uses
-//     // a helper we've provided to easily load images
-//     this.sprite = 'images/char-pink-girl.png';
-// };
+var Player = function(speed) {
+    // Variables applied to each of our instances go here,
+    // we've provided one for you to get started
+    this.x = 3;
+    this.y = 0;
+    // The image/sprite for our enemies, this uses
+    // a helper we've provided to easily load images
+    this.sprite = 'images/char-pink-girl.png';
+};
 //
 // // Update the enemy's position, required method for game
 // // Parameter: dt, a time delta between ticks
