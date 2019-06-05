@@ -16,7 +16,8 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-    this.y = dt * speed; // ?
+    debugger
+    this.x = dt * this.speed; // ?
 };
 
 // Draw the enemy on the screen, required method for game
@@ -26,8 +27,8 @@ Enemy.prototype.render = function() {
 
 
 var Player = function() {
-    this.x = 3;
-    this.y = 0;
+    this.x = 202;
+    this.y = 380;
     this.sprite = 'images/char-pink-girl.png';
 };
 
@@ -47,12 +48,12 @@ Player.prototype.render = function() {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-let enemy1 = new Enemy(4, 3);
-let enemy2 = new Enemy(3, 5);
-let enemy3 = new Enemy(2, 6);
-let enemy4 = new Enemy(4, 2);
-let enemy5 = new Enemy(3, 3);
-let enemy6 = new Enemy(2, 9);
+let enemy1 = new Enemy(55, 3);
+let enemy2 = new Enemy(138, 5);
+let enemy3 = new Enemy(221, 6);
+let enemy4 = new Enemy(55, 2);
+let enemy5 = new Enemy(138, 3);
+let enemy6 = new Enemy(221, 9);
 
 let allEnemies = [enemy1, enemy2, enemy3, enemy4, enemy5, enemy6];
 
