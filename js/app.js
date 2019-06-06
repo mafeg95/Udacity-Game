@@ -35,8 +35,20 @@ var Player = function() {
     this.sprite = 'images/char-pink-girl.png';
 };
 
-Player.prototype.update = function(dt) {
+Player.prototype.update = function(direction) {
 
+};
+
+Player.prototype.handleInput = function(direction){
+  if ((direction === "up") && this.y > 0){
+    this.y = this.y - 83;
+  } else if ((direction === "down") && this.y < 380) {
+    this.y = this.y + 83;
+  } else if ((direction === "left") && this.x > 0) {
+    this.x = this.x - 101;
+  } else if ((direction === "right") && this.x < 404) {
+    this.x = this.x + 101;
+  }
 };
 
 Player.prototype.render = function() {
