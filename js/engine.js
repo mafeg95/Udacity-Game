@@ -81,11 +81,20 @@ var Engine = (function(global) {
     function update(dt) {
         updateEntities(dt);
         checkCollisions();
+        checkWon();
+    }
+
+    function checkWon(){
+      if (player.y === -35){
+        player.x = 202;
+        player.y = 380;
+      }
     }
 
     function checkCollisions() {
       allEnemies.forEach(function(enemy){
         if ((enemy.x - player.x < 0 && enemy.x - player.x > -20) && enemy.y - player.y == 7){
+          debugger
           player.x = 202;
           player.y = 380;
         }
