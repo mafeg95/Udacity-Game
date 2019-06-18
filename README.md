@@ -2,7 +2,7 @@
 
 ## Implementation
 
-This game was built with JavaScript Oriented programming 
+This game was built with JavaScript Oriented programming.
 
 ## Instructions
 
