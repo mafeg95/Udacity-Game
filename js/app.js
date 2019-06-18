@@ -25,10 +25,6 @@ var Player = function() {
 };
 
 Player.prototype.update = function(direction) {
-
-};
-
-Player.prototype.handleInput = function(direction){
   if ((direction === "up") && this.y > 0){
     this.y = this.y - 83;
   } else if ((direction === "down") && this.y < 380) {
@@ -38,6 +34,10 @@ Player.prototype.handleInput = function(direction){
   } else if ((direction === "right") && this.x < 404) {
     this.x = this.x + 101;
   }
+};
+
+Player.prototype.handleInput = function(direction){
+  this.update(direction);
 };
 
 Player.prototype.render = function() {
